@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cadastro de Clientes</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+  <style>
+    .btn-arredondado {
+      border: none;
+      border-radius: 15px;
+    }
+    .btn-padrao {
+      background: green;
+      color: white;
+    }
+    .btn-edicao {
+      background: orange;
+      color: white;
+    }
+    .btn-excluir {
+      background: red;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cadastro de clientes</h1>
+
+  <button class="btn-arredondado btn-padrao" onclick="carregaRegistros()">Carregar Clientes</button>
+  <br>
+  <br>
+
+  <div>
+    <input type="hidden" name="id">
+    <label>
+      Nome:
+      <input type="text" name="nome">
+    </label>
+    <label>
+      E-mail:
+      <input type="text" name="email">
+    </label>
+    <button class="btn-arredondado btn-padrao" id="btn-adicionar">Salvar</button>
+  </div>
+
+  <br>
+  <br>
+  <table id="tabela-clientes">
+    <thead>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>E-mail</th>
+      <th>Ações</th>
+    </thead>
+    <tbody>
+
+    </tbody>
+  </table>
+  
+  <script src="script.js"></script>
+</body>
+</html>
